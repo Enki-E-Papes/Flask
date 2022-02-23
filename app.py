@@ -3,11 +3,11 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def hello_world():
-    return render_template("Home.html") #importa il file html
+    return render_template("ccio.html") #importa il file html
 
 @app.route('/it', methods=['GET'])
 def ciao_Mondo():
-    return render_template("Home.html") #importa il file html
+    return render_template("ccio.html",ciocio="ciao bello") #importa il file html
 
 
 @app.route('/fr', methods=['GET'])
