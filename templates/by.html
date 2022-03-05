@@ -1,14 +1,13 @@
--<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/ciao.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/oaic.css')}}">
     <head>
         <title>Welcome</title>
     </head>
     <body bgcolor="{{colore}}">
-
-        <img src="/static/laFrase/{{ran}}.jpg">
-
-        <p>{{frase}}</p>
-        
+    
+        <p>{{ti}}</p>
+        <img src="static/{{tempo}}.png">
     </body>
 </html>
