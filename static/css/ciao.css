@@ -1,3 +1,27 @@
-body{
-    background-color: blueviolet;
+
+@import url('http://fonts.cdnfonts.com/css/bloody');
+
+*{
+    box-sizing: border-box;
 }
+
+body{background-image:url(https://i.pinimg.com/originals/27/57/3e/27573edd5d2c322e3202af554000c780.gif);
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center center;
+height: 100vh;
+font-family: 'Bloody', sans-serif;display:flex;
+font-style: italic;
+text-shadow: 2px 2px rgb(105, 31, 31);
+display: flex;
+flex-direction:column;
+align-items:center;
+justify-content: center;
+text-align: center;
+margin: 0;
+overflow: hidden;
+color: red;}
+
+div{transform: translateY(12%)}
+
+h1{font-size: 60px;margin: -150px 0 40px; }

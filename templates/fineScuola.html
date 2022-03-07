@@ -1,10 +1,18 @@
 -<!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/ciao.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <style>
+        h1.a {
+  font-family: "Audiowide", sans-serif;
+}
+    </style>
     <head>
         <title>Welcome</title>
     </head>
     <body bgcolor="{{colore}}">
-        <h1>Mancano {{fine}} giorni alla fine della scuola!</h1>
+        <center>
+        <h1 class="a">Mancano {{fine}} giorni alla fine della scuola!</h1>
+    </center>
     </body>
 </html>
