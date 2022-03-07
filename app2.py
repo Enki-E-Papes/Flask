@@ -41,7 +41,7 @@ def frasi():
 def quantomanca():
   oggi = datetime.now()
   Lafine = datetime(day=8, month=6, year=2022)
-  differenza= fine - oggi
+  differenza= Lafine - oggi
   return render_template('fineScuola.html', fine=differenza.days)
 
 if __name__ == '__main__':
