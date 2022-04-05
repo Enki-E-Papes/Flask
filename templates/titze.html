@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/oaic.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/data" method = "get">
+        <p>Name: <input type = "text" name = "Name" /></p>
+        <p>Sex: <input type = "radio" name = "Sex" value="M" />M <input type = "radio" name = "Sex" value="F" />F <input type = "radio" name = "Sex" value="A" />Altro</p>
+        <p>Hobbies: <input type = "checkbox" name = "Hobby1" value="Soccer"/>Soccer 
+                <input type = "checkbox" name = "Hobby2" value="Painting"/>Painting
+                <input type = "checkbox" name = "Hobby3" value="Gaming"/>Gaming
+        </p>
+        City:<select name="City">
+            <option value=""></option>
+            <option>Milano</option>
+            <option>Roma</option>
+            <option>Napoli</option>
+          </select>
+        </p>
+        <p><textarea name="Comments" rows="4" cols="50"></textarea>
+        </p>
+        <p><input type = "submit" value = "Submit" /></p>
+    </form>
+</body>
+</html>

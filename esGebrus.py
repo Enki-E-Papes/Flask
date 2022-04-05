@@ -76,7 +76,7 @@ def drop_down():
 
 @app.route('/scleStaz', methods=['GET'])
 def scleStazv():
-    global 
+     
     stazione= request.args["stazione"]
     stazione_utente=stazionigeo[stazionigeo.OPERATORE==stazione]
     quartiere=quartieri[quartieri.contains(stazione_utente.geometry.squee)]
@@ -84,4 +84,4 @@ def scleStazv():
 
     return render_template("vistStazione.html",stazioni = risultato.to_html())
 if __name__ == '__main__':
-  app.run(host='0.0.0.0', port=3245, debug=True) 
+  app.run(host='0.0.0.0', port=3245, debug=True)

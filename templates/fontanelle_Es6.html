@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/ciao.css')}}">
+<form action="/dati_fontanelle" method = "GET">
+
+    <label for="Scelta">Scegli un quartiere:</label>
+    <select name="Scelta" method="GET">
+        <!--  il codice sotto fa un ciclo  -->
+      {% for i in quartiere%}
+      <option value="{{i}}"SELECTED>{{i}}</option>
+      {%endfor%}
+
+    </select>
+    <p><input type = "submit" value = "Submit" /></p>
+</form>
+</body>
+</html>
