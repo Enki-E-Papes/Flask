@@ -70,8 +70,18 @@ def mappa():
 @app.route('/drop_down', methods=['GET'])
 def drop_down():
     nomi_stazioni = stazioni.OPERATRE.to_list()
-    return render_template("DropDown.html",stazioni = .to_html())
+    nomi_stazioni =list(set(nomi_stazioni))
+    nomi_stazioni = nomi_stazioni.sort()
+    return render_template("DropDown.html",stazioni = risultato.to_html())
 
+@app.route('/scleStaz', methods=['GET'])
+def scleStazv():
+    global 
+    stazione= request.args["stazione"]
+    stazione_utente=stazionigeo[stazionigeo.OPERATORE==stazione]
+    quartiere=quartieri[quartieri.contains(stazione_utente.geometry.squee)]
+    
 
+    return render_template("vistStazione.html",stazioni = risultato.to_html())
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port=3245, debug=True) 
