@@ -12,7 +12,8 @@ import io
 import pandas as pd
 
 stazioni = pd.read_csv("/workspace/Flask/templates/ingressi_areac_varchi.csv",sep= ";")
-
+stazionigeo=gpd.read_file("/workspace/Flask/templates/ds710_coordfix_ripetitori_radiofonici_milano_160120_loc_final.geojson",sep= ";") 
+quartieri =gpd.read_file("/workspace/Flask/templates/GeoDataFrameLichSenpai13^ds964_nil_wm.zip")
 
 @app.route('/', methods=['GET'])
 def home():
@@ -47,9 +48,29 @@ def selezione():
         return redirect(url_for("/numero"))
     return render_template("home.html")
 
+@app.route('/input', methods=['GET'])
+def input():
+    return render_template("input.html")
 
 
+@app.route('/ricerca', methods=['GET'])
+def ricerca():
+    global quartiere,stazioni_quartire
+    nomequartiere=request.args["quartiere"]
+    quartiere=quartieri[quartieri.NIL.str.contains(nomequartiere)]
+    stazioni_quartire= stazionigeo[stazionigeo.within(quartiere.unary_union)]
+    return render_template("elenco1.html",risultato=stazioni_quartire.to_html())
 
+@app.route('/mappa', methods=['GET'])
+def mappa():
+    fig,ax =plt 
+   
+    return render_template("elenco.html",risultato = risultato.to_html())
+
+@app.route('/drop_down', methods=['GET'])
+def drop_down():
+    nomi_stazioni = stazioni.OPERATRE.to_list()
+    return render_template("DropDown.html",stazioni = .to_html())
 
 
 if __name__ == '__main__':
