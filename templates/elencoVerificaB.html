@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/ciao.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/oica.css')}}">
     <title>Document</title>
 </head>
 <body>
-    <form action="/">
-    <input type="text">{{ui}}
-</form>
+    <div style="background-color: rgb(95, 31, 31);">
+    {{Radio_Trovati|safe}}
+    </div>
 </body>
 </html>
