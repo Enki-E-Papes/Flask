@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300');
+*{margin:0; padding:0;  font-family:Helvetica, Geneva, Arial,SunSans-Regular, sans-serif;
+box-sizing:border-box;}
+
+.inner-width{min-width:111px; padding:0 1vw;}
+.testimonial-section{width: 134vh; transform: translateX(30vh);}
+.testimonial-section h1{text-align:center; color:rgb(255, 255, 255);margin:30vh ;min-width: 100%;}
+
+.testimonial{background:#f1f1f1; padding:40px; overflow:hidden; border-radius:8px; cursor:pointer;}
+
+.test-info{display:flex; height:60px; align-items:center;}
+
+.test-name{font-size:12px; color:#333;}
+
+.test-name span{display:block; font-size:14px; font-weight:700; color:#3498db;}
+#ino{padding-right: 60vh;}
+#primo_strato{font-family: 'Nunito', sans-serif;background-color: #1d1e61};
+
+h1 h3{font-size: xx-large; transform: translateX(-30vh);}
+a{text-decoration: none;}
+.border{margin:-27vh auto;}
+#ciaosito{width:10vh; height:10vh;border-radius: 60%;background-color: #1d0d36;}
+
+header{position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:30px 100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:10000; font-size: xx-large;}
+
+header .logo{color:#fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing:2px;}
+    
+    header ul{display:flex;
+    justify-content: center;
+    align-items: center;}
+ 
+    header ul{display:flex;
+    justify-content: center;
+    align-items: center;}
+    
+    header ul li{list-style:none;
+    margin-left:20px;}
+    
+    header ul li a{text-decoration:none;
+    padding:6px 15px;
+    color:#fff;
+    border-radius: 20px;}
+    
+    header ul li a:hover{
+    background:#fff;
+    color:#2b1055;}
+
+    .naoc{ 
+        text-decoration:none;
+        background: rgba(0,0,0,0.7);
+        display:inline-block;
+        border-radius: 40px;
+        padding:8px 30px}
+        
+        ul{color: #fff;}
+        
+        .inner-width{min-width:111px; padding:0 1vw;}
+    
+        .testimonial-section{width: 134vh; transform: translateX(30vh);}
+        
+        .testimonial-section h1{text-align:center; color:rgb(255, 255, 255);margin:30vh ;min-width: 100%;}
+        
+        .testimonial{background:#f1f1f1; padding:40px; overflow:hidden; border-radius:8px; cursor:pointer;}
+        
+        .test-info{display:flex; height:60px; align-items:center;}
+        
+        .test-name{font-size:12px; color:#333;}
+        
+        .test-name span{display:block; font-size:14px; font-weight:700; color:#3498db;}
+    
+        #ino{padding-right: 60vh;}
+    
+        #primo_strato{font-family: 'Nunito', sans-serif;background-color: #1d1e61};
+    
+        h1 h3{font-size: xx-large; transform: translateX(-30vh);}
+    
+        a{text-decoration: none;}
+    
+        .border{margin:-27vh auto;}
+
+
+            #ciaosito{width:7vh; height:7vh;border-radius: 60%;background-color: #1d0d36;}
+            .oaic{transform:translateX(-5vh);text-decoration:none;
+                background: rgba(0,0,0,0.7);
+                color: #fff;
+                display:inline-block;
+                border-radius: 40px;
+                padding:8px 30px}
+            li{font-size: xx-large;}        
+    

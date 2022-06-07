@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300');
+*{margin:0;
+ padding:0;
+ box-sizing: border-box;
+ font-family: 'Poppins',sans-serif;}
+input{font-size: xx-large;}
+form input{font-size: xx-large;  transform:translateY(30vh);flex:none;}
+#fromRes{transform:translateX(10vh)}
+ body{min-height:100vh; background:#18171c;}
+ 
+ header{position:absolute;
+ top:0;
+ left:0;
+ width:100%;
+ padding:30px 100px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ z-index:10000;}
+ 
+ header .logo{color:#fff;
+ font-weight: 700;
+ text-decoration: none;
+ font-size: 2em;
+ text-transform: uppercase;
+ letter-spacing:2px;}
+ 
+ header ul{display:flex;
+ justify-content: center;
+ align-items: center;}
+ 
+ header ul li{list-style:none;
+ margin-left:20px;}
+ 
+ header ul li a{text-decoration:none;
+ padding:6px 15px;
+ color:#fff;
+ border-radius: 20px;}
+ 
+ header ul li a:hover{
+ background:#fff;
+ color:#2b1055;}
+ 
+ section{
+ position: relative;
+ width: 100%;
+ height: 100vh;
+ padding: 100px;
+ display:flex;
+ justify-content:center;
+ align-items:center;}
+ 
+ 
+ section::before
+ {content:'';
+ position:absolute;
+ bottom:0;
+ width:100%;
+ height:100px;
+ background:linear-gradient(to top,#1d0d36,transparent); z-index:1000;}
+ 
+ 
+ section img {position:absolute;
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ object-fit: cover;
+ pointer-events: none;}
+ 
+ #icao{position:absolute;
+ color:#fff;
+ white-space:nowrap;
+ font-size:4.5vw;
+ z-index:9;}
+ 
+ #btn{text-decoration:none;
+ display:inline-block;
+ padding:8px 30px;
+ border-radius: 40px;
+ background:#fff;
+ color:#2b1055;
+ font-size:1.5em;
+ z-index:9;
+ transform:translateY(770px);
+ transform:translateX(-20vh);
+ margin-left:40em}
+ 
+ 
+ .sec{
+    position:relative;
+    padding:12px;
+    }
+ 
+  .sec h2{font-size:2em;
+  margin-bottom:10px;
+  color:#fff;}
+  
+  .sec p{font-size:1em;
+  color:#fff;}
+  
+ div{ 
+    text-decoration:none;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    display:inline-block;
+    border-radius: 40px;
+    padding:8px 30px}
+ 
+    #gi{text-decoration:none;
+ display:inline-block;
+ padding:8px 30px;
+ border-radius: 40px;
+ background:#fff;
+ color:#2b1055;
+ font-size:1.5em;
+ z-index:9;
+ 
+ margin-left:40em}
+
+
+ #gi{margin:1em;
+text-decoration:none;
+display:inline-block;
+text-align: center;
+transform:translateY(10vh);
+padding:8px 30px; background:#fff;
+ color:#2b1055;}
+
+#button:hover {
+cursor: pointer;
+background-color: #333;
+}
+#button:active {
+background-color: #555;
+}
+#button::after {
+content: "\f077";
+font-family: FontAwesome;
+font-weight: normal;
+font-style: normal;
+font-size: 2em;
+line-height: 50px;
+color: #fff;
+}    
+.noi_noi{font-size: xx-large;}
+
+
+ .coi_coi{transform:translateY(40vh); transform:translateX(-5vh);   text-decoration:none;
+display:inline-block;}
+
+a{font-size:x-large;}
+
+#ciao{font-size:xx-large;}
+
+.fofo{text-decoration: none;color: antiquewhite;}
+
+#nui{border-radius: 40px;background-color: #FF9800;transform:translateY(30vh);width:15%;
+   height: 39%;
+   border: thin solid black;
+   overflow: auto;
+   resize: both;}
+
+
+   #Quartieri_Ristoranti{border-radius: 40px;background-color: #FF9800;transform:translateY(30vh);width:15%;width:15%;
+      height: 90%;
+      border: thin solid black;
+      overflow: auto;
+      resize: both;}
+   .union{transform:translateX(50%)}
+#nomii{padding-left: 90vh;transform:translateY(20vh)}
+
+#nomii2{padding-left: 90vh;transform:translateY(-20vh)}
+#ciaosito{width:7vh; height:7vh;border-radius: 60%;background-color: #1d0d36;}
+.oaic{transform:translateX(-5vh)}
+li{font-size: xx-large;}
+
+#cooc{font-style: italic; font-size: 14px;}
+
+footer{background-color: #18171c;}
+.formPadding{padding-left: 90vh;transform:translateY(-20vh)}
+.formPadding2{transform:translateX(12vh)}
+
+.antiForm{transform:translateY(12vh);}
+
+
+.box-img{
+   width: 34px;
+   height: 34px;
+   display: flex;
+   border-radius: 50%;
+   align-items: center;
+   justify-content: center;   
+   transform:translateX(14%)
+}
+.grafico {position:absolute; transform:translateY(30vh);}
+
+#ristoranti{transform:translateY(90%);}
